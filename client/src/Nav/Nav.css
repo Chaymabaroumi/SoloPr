@@ -1,0 +1,125 @@
+/* Navbar Container */
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgb(251, 251, 251);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+}
+
+/* Navbar Content */
+.navi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+
+/* Links Section */
+.navi .flex-1 {
+  display: flex;
+  flex: 1;
+}
+
+.navi a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 12px;
+  transition: color 0.3s ease;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(73, 73, 52);
+}
+
+.navi a:hover {
+  color: #ff0084; /* Change color on hover */
+}
+
+/* Logo Section */
+.navi h1 {
+  font-size: 24px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin: 0;
+  color: #3a2a339b;
+}
+
+/* Search Input */
+.relative {
+  position: relative;
+}
+
+.relative input[type="text"] {
+  width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.relative input[type="text"]:focus {
+  color: #ff0084;
+  outline: none;
+  color: rgb(73, 73, 52);
+}
+
+.btn_search {
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  transform: translateY(50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Icons Section */
+.navi .gap-8 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  color: rgb(73, 73, 52);
+  color: #ff0084;
+  transition: color 0.3s ease;
+}
+
+.navi .gap-8 a:hover {
+  color: rgb(73, 73, 52);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navi {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+  }
+
+  .navi .flex-1 {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .relative input[type="text"] {
+    width: 100%;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .btn_search {
+    right: 0;
+  }
+
+  .navi h1 {
+    font-size: 20px;
+  }
+  .btnss {
+    background-color: white;
+    color: black;
+    border: 2px solid #04aa6d;
+  }
+}

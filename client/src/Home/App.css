@@ -1,0 +1,151 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4c3c31d;
+  margin: 0;
+  padding: 0;
+}
+
+.contenue {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 5%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #333;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.navbar input {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  margin-right: 10px;
+}
+
+.navbar button {
+  background-color: #ff6b6b;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.navbar button:hover {
+  background-color: #ff5252;
+}
+
+/* Buttons */
+/* Enhanced Button CSS */
+.btn {
+  color: rgb(143, 108, 108);
+  padding: 12px 24px;
+  margin: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #ce9dbb, #b084a1);
+  color: #fff;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Card */
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-title {
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-price {
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  color: #f05353;
+}
+
+.product-description {
+  margin-bottom: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 14px;
+  color: #66666694;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contenue {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenue {
+    padding: 5px;
+  }
+}
+
+.btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btnss {
+  display: inline-flex;
+  align-items: center;
+
+  font-size: 1rem;
+  font-weight: 500;
+  color: #66666694;
+  border: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+}
